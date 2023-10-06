@@ -1,0 +1,1 @@
+Explore the wonders of Python lists and tuples in this project! Learn the ins and outs of lists, their versatility, and how to use them as stacks and queues. Discover powerful list methods and master the art of list comprehensions for concise code. Delve into tuples and their unique characteristics, gaining insights into packing, unpacking, and the del statement.
