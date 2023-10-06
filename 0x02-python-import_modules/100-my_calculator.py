@@ -17,4 +17,4 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
     output = ope[operator](a, b)
 
-    print("{} {} {} = {}".format(a, operator, b, result))
+    print("{} {} {} = {}".format(a, operator, b, output))
