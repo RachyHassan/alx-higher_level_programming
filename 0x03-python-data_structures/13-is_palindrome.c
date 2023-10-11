@@ -54,7 +54,7 @@ int palindrome(listint_t **head)
 	if ((len % 2) == 0 && tmp -> n != tmp->next->n)
 		return (0);
 
-	tmp = tm->next->next;
+	tmp = tmp->next->next;
 	rev = reverse_list(&tmp);
 	mid = rev;
 
