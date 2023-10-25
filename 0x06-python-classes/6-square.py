@@ -5,7 +5,10 @@
 class Square:
     """ A class to represent a square."""
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new instance of the square class. """
+        """Initialize a new instance of the square class. 
+        Arguments:
+            size(int): the size of the square
+            Position (int, int): The position of the new swuare"""
         self.size = size
         self.position = position
 
