@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+"""A square module to define the Square class."""
 
 class Square:
+    """ A class to represent a Square."""
+
     def __init__(self, size=0):
+        """Initialize the instance size."""
         if not isinstance(size, int):
             raise TypeError("Size must be an integer")
         elif size < 0:
