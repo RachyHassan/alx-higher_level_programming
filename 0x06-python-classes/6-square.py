@@ -5,15 +5,18 @@
 class Square:
     """ A class to represent a square."""
     def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new instance of the square class. """
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """ Return the size in int. """
         return (self.__size)
 
     @size.setter
     def size(self, value):
+        """ Handle type and value errors. """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -22,10 +25,12 @@ class Square:
 
     @property
     def position(self):
+        """print the position. """
         return (self.__position)
 
     @position.setter
     def position(self.value):
+        """ Handle type and value errors. """
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
@@ -34,9 +39,11 @@ class Square:
         self.__position = value
 
     def area(self):
+        """ print the square. """
         return (self.__size * self.__size)
 
     def my_print(self):
+        """ print the size and position. """
         if self.__size == 0:
             print("")
             return
