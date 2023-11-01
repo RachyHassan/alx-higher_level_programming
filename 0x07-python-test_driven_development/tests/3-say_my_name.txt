@@ -1,0 +1,30 @@
+================
+3-say_my_name.py
+================
+A function that prints the first name and last name with the function 'say_my_name(first_name, last_name="")
+
+Usage
+=====
+
+::
+
+
+The parameters 'first_name' and 'last_name' must be strings, else TypeError is raised.
+
+    >>> say_my_name(4, "Davis")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>> say_my_name("Davis", 4)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+::
+
+TypeError is raised if no name is provided
+
+    >>> say_my_name(none)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
