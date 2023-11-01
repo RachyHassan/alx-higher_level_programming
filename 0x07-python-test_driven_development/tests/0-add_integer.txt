@@ -1,0 +1,60 @@
+============================
+How to use 0-add_integer.py
+===========================
+
+The 'add_integer(a, b=98)' function is an integer addition 
+
+Usage
+=====
+
+'''add_integer(...)''' returns the addition of two integers by using the '+' operand
+By default, the second value is 98.
+
+::
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(1, 5)
+    6
+
+::
+
+    >>> add_integer(1, -5)
+    -4
+
+::
+
+
+    >>> add_integer(0.5, 0.5)
+    1
+
+::
+    An integer and a float can be used together
+    >>> add_integer(1, 0.5)
+    1.5
+
+::
+
+If either argument is not an integer or a float, a typeerror is raised:
+
+::
+
+    >>> add_integer("add", 5)
+    Traceback (most recent call last):
+    TypeError: a should be an integer
+
+::
+
+Passing in no value (None) as a would throw a typeerror
+
+::
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a much be an integer
+
+::
+
+If infinity is provided, the function should raise a OverflowError
+
+::
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
