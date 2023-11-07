@@ -20,8 +20,8 @@ class Student:
             attrs (list): is a list of strings
             that represents the attributes
         """
-        if (isinstance(attrs) == list and
-                all(isinstance(element) == str for element in attrs)):
+        if (type(attrs) == list and
+                all(type(element) == str for element in attrs)):
             return {j: getattr(self, j) for
                     j in attrs if hasattr(self, j)}
         return self.__dict__
