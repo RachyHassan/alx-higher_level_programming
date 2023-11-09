@@ -2,7 +2,7 @@
 """A module to define a class MyInt that inherits from int. """
 
 
-class Myint(int):
+class MyInt(int):
     """ nvert int operators == and !=. """
 
     def __eq__(self, value):
