@@ -1,0 +1,86 @@
+=================================================
+Test case for 7-base_geometry using 'BaseGeometry
+=================================================
+Import the class from the module
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+::
+Area should not be printable for now
+    >>> base_area = BaseGeometry()
+    >>> base_area.area()
+    Traceback (most recent call last):
+    		...
+    Exception: area() is not implemented
+
+::
+TypeError is raised when non-integer is passed
+    >>> base = BaseGeometry()
+    >>> base.integer_validator("name", "3")
+    Traceback (most recent call last):
+    		...
+    TypeError: name must be an integer
+
+::
+TypeError is raised when boolean is passed
+    >>> base = BaseGeometry()
+    >>> base.integer_validator("name, False)
+    Traceback (most recent call last):
+    		...
+    TypeError: name must be an integer
+
+::
+ValueError is raised when zero is passed
+    >>> base = BaseGeometry()
+    >>> base.integer_validator("name", 0)
+    Traceback (most recent call last):
+    		...
+    ValueError: name must be greater than 0
+
+::
+ValueError is raised when negative value is passed
+    >>> base = BaseGeometry()
+    >>> base.integer_validator("name", -3)
+    Traceback (most recent call last):
+    		...
+    ValueError: name must be greater than 0
+
+::
+TypeError is raised when one argument is passed
+    >>> base = BaseGeometry()
+    >>> base.integer_validator("name")
+    Traceback (most recent call last)
+    		...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+::
+TypeError is raised when more than two arguments are passed
+    >>> base = BaseGeometry()
+    >>> base.integer_validator("name", 4, 3)
+    Traceback (most recent call last):
+    		...
+    TypeError: integer_validator() takes 3 positioal arguments but 4 were given
+
+::
+TypeError is raised if no argument is raised
+    >>> base = BaseGeometry()
+    >>> base.integer_validator()
+    Traceback (most recent call last):
+    		...
+    TypeError: integer_validator() missing 2 positional arguments: 'name' and 'value'
+
+=====================
+Area Method
+=====================
+
+TypeError is raised when one or more arguments are passed
+    >>> base = BaseGeometry()
+    >>> base.area(3)
+    Traceback (most recent call last):
+    		...
+    TypeError: area() takes 1 positional argument but 2 were given
+
+::
+    >>> base.area(3, 5)
+    Traceback (most recent call last):
+    		...
+    TypeError: area() takes 1 positional argument but 3 were given
