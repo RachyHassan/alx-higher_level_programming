@@ -80,6 +80,7 @@ TypeError is raised when one or more arguments are passed
     TypeError: area() takes 1 positional argument but 2 were given
 
 ::
+    >>> base = BaseGeometry()
     >>> base.area(3, 5)
     Traceback (most recent call last):
     		...
