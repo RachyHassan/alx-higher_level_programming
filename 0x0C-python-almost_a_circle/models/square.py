@@ -24,8 +24,8 @@ class Square(Rectangle):
     def __str__(self):
         """ A str representation to override str() """
         return "[Square] ({}) {}/{} - {}".format(self.id,
-                                            self.x,
-                                            self.y, self.width)
+                                                 self.x,
+                                                 self.y, self.width)
 
     def update(self, *args, **kwargs):
         """ Assigns arguments to attributes based
@@ -54,6 +54,7 @@ class Square(Rectangle):
                     "y": self.y
                     }
         return (square_dict)
+
 
 if __name__ == "__main__":
 
