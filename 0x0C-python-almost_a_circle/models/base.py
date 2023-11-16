@@ -128,9 +128,9 @@ class Base:
 
                 list_of_instances = []
 
-                for l in dicts:
+                for n in dicts:
                     converted_list = {}
-                    for key, value in l.items():
+                    for key, value in n.items():
                         converted_list[key] = int(value)
 
                     list_of_instances.append(cls.create(**converted_list))
