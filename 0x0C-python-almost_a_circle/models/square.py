@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ A module to represent a Square. """
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
