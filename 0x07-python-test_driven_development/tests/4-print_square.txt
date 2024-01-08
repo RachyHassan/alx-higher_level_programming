@@ -13,6 +13,7 @@ Squares are printed using the '#' character. 'size' represents the height and wi
     >>> print_square(1)
     #
 
+
 ::
 
     >>>> print_square(3)
@@ -29,6 +30,7 @@ if 'size' is 0, function prints nothing
 ::
 
 TypeError is raised if 'size' is not an int
+
 
     >>> print_square('hello')
     Traceback (most recent call last):
