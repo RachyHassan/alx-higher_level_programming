@@ -13,5 +13,5 @@ size=$(curl -sI "$url" | grep -i 'content-length' | awk '{print $2}' | tr -d '\r
 if [ -z "$size" ]; then
 	echo "Can't determine the size of the response body for $url."
 else
-	echo "Size of the response body for $url: ${size} bytes"
+	echo "${size}"
 fi
