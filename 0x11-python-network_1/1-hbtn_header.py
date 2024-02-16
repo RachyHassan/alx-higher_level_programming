@@ -4,10 +4,11 @@ import urllib.request
 import sys
 
 # fetch the url from command line
-url = sys.argv[1]
 # send a request to url and retrieve a response
-with urllib.request.urlopen(url) as response:
-    # extract the value of X-Request-Id
-    x_request_id = response.getheader('X-Request-Id')
+# extract the value of X-Request-Id
 # print variable
+url = sys.argv[1]
+
+with urllib.request.urlopen(url) as response:
+    x_request_id = response.getheader('X-Request-Id')
 print(x_request_id)
