@@ -7,7 +7,7 @@ import sys
 url = sys.argv[1]
 # send a request to url and retrieve a response
 with urllib.request.urlopen(url) as response:
-# extract the value of X-Request-Id
+    # extract the value of X-Request-Id
     x_request_id = response.getheader('X-Request-Id')
 # print variable
 print(x_request_id)
