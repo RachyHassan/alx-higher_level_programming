@@ -20,3 +20,9 @@ def post_request(url, email):
         body = response.read().decode('utf-8')
 
     print(body)
+
+
+if __name__ == "__main__":
+    url = sys.argv[1]
+    email = sys.argv[2]
+    post_request(url, email)
