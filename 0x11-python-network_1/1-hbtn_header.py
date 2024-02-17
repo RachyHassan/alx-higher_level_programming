@@ -5,6 +5,7 @@ A script that takes in a URL, sends a request and displays response value
 import urllib.request
 import sys
 
+
 # fetch the url from command line
 url = sys.argv[1]
 # send a request to url and retrieve a response
